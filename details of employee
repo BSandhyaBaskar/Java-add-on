@@ -1,0 +1,16 @@
+package program;
+
+public class demoMethod {
+
+	public static void Employee(String name) {
+		System.out.println(name+" "+work+" "+Salary);
+	}
+	
+	
+	public static void main(String[] args ) {
+		Employee("Sandhya","Fronted developer","3LPA");
+		
+		
+	}
+	
+}
