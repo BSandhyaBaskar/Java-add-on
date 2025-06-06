@@ -1,16 +1,14 @@
 package program;
 
-public class demoMethod {
+public class DemoMethod {
 
-	public static void Employee(String name) {
-		System.out.println(name+" "+work+" "+Salary);
-	}
-	
-	
-	public static void main(String[] args ) {
-		Employee("Sandhya","Fronted developer","3LPA");
-		
-		
-	}
-	
+public static void  Details(String name,String work,String Package) {
+System.out.println(name+" "+work+" "+Package);
+
+}
+
+public static void main(String[] args) {
+Details("Sandhya","Fronted developer","3LPA");
+Details("Anjali","Trainer","3PLA");
+}
 }
