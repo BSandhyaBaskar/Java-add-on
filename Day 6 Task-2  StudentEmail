@@ -1,0 +1,13 @@
+package Program;
+import java.util.HashSet;
+public class StudentEmail {
+public static void main(String[]args){
+	HashSet<String> stuemail=new HashSet();
+	stuemail.add("sandhya@gmail.com");
+	stuemail.add("akalya@gmail.com");
+	}
+    for(String data:stuemail) {
+    System.out.println("data");
+    }
+
+}
