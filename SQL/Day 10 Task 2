@@ -1,0 +1,18 @@
+CREATE TABLE Department (
+    DepartmentID INT PRIMARY KEY,
+    DepartmentName VARCHAR(100),
+    AvgSalary int
+);
+
+
+INSERT INTO Department (DepartmentID, DepartmentName, AvgSalary) VALUES
+(1, 'HR', 60000),
+(2, 'Accounting', 75000),
+(3, 'Engineering', 90000),
+(4, 'Marketing', 65000),
+(5, 'Sales', 55000);
+
+SELECT Department, AVG(Salary) AS AverageSalary
+FROM Employee
+GROUP BY Department;
+
