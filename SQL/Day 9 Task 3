@@ -1,0 +1,20 @@
+CREATE TABLE Books (
+    BookID INT PRIMARY KEY,
+    Title VARCHAR(200),
+    Author VARCHAR(100),
+    PublishedYear INT,
+    Price (10, 2)
+);
+
+
+INSERT INTO Books (BookID, Title, Author, PublishedYear, Genre, Price) VALUES
+(1, 'The Great Gatsby', 'F. Scott Fitzgerald', 1925, ,300),
+(2, 'Mathematics of Ramanujam', 'Harper Lee', 1960, , 500),
+(3, 'Thirukural', 'Thiruvalluvar', 1949, , 650),
+(4, 'Java ', 'James Gosling', 2020, , 450),
+(5, 'Python', 'Salinger', 1951, , 560);
+
+
+SELECT *
+FROM Books
+WHERE Title LIKE '%Java%';
