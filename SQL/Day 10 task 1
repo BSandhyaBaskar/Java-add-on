@@ -1,0 +1,26 @@
+CREATE TABLE Enrollment (
+    StudentID INT,
+    CourseID INT,
+    PRIMARY KEY (StudentID, CourseID),
+    FOREIGN KEY (StudentID) REFERENCES Student(StudentID),
+    FOREIGN KEY (CourseID) REFERENCES Course(CourseID)
+);
+
+
+INSERT INTO Enrollment (StudentID, CourseID) VALUES
+(1, 101),
+(2, 101),
+(3, 102),
+(4, 103),
+(5, 101),
+(1, 104),
+(3, 105);
+
+
+SELECT 
+    c.CourseID,
+    c.CourseName,
+    COUNT(e.StudentID) AS StudentCount
+FROM Course LEFT JOIN Enrollment e ON c.CourseID = e.CourseID
+GROUP BY c.CourseID, c.CourseName
+ORDER BY c.CourseID;
