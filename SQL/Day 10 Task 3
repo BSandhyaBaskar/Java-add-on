@@ -1,0 +1,20 @@
+CREATE TABLE Product (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(100),
+    Category VARCHAR(50),
+    Price DECIMAL(10, 2)
+);
+
+
+INSERT INTO Product (ProductID, ProductName, Category, Price) VALUES
+(1, 'Wireless Mouse', 'Electronics', 25.99),
+(2, 'USB-C Charger', 'Electronics', 19.99),
+(3, 'Water Bottle', 'Home & Kitchen', 12.49),
+(4, 'Desk Lamp', 'Home & Kitchen', 35.00),
+(5, 'Yoga Mat', 'Sports', 45.99);
+
+
+SELECT 
+    MAX(Price) AS MaxPrice,
+    MIN(Price) AS MinPrice
+FROM Product;
