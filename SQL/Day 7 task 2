@@ -1,0 +1,14 @@
+INSERT INTO Student (StudentID, FirstName, LastName, DateOfBirth, Email) VALUES
+(1, 'Sandhya', 'Baskar', '2005-05-15', 'sandhya@gmail.com'),
+(2, 'Akalya', 'kalippan', '2005-11-22', 'akalya@gmail.com'),
+(3, 'Anjali', 'Murugasan', '2001-07-03', 'anjali@gmail.com'),
+(4, 'Catherine', 'Paulraj', '2000-01-30', 'catherinedanya@gamil.com'),
+(5, 'Sathya', 'Ram', '2005-12-12', 'sathyram@gmail.com');
+
+
+INSERT INTO Course (CourseID, CourseName) VALUES
+(101, 'Introduction to Programming'),
+(102, 'Database Systems'),
+(103, 'Calculus I'),
+(104, 'English Literature'),
+(105, 'Physics I');
