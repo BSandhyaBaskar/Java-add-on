@@ -1,0 +1,47 @@
+package program;
+class SbiAcc{
+	private String Accholder;
+	private int Balance;
+	SbiAcc(String Accholder , int Balance){
+		this.Accholder=Accholder;
+		this.Balance=Balance;
+	}
+	public String getAccholder() {
+		return Accholder;
+	}
+	public int getBalance() {
+		return Balance;	
+	}
+	public void Deposite(int dep) {
+		if(Balance > 0) {
+			Balance += dep;
+			System.out.println("Deposite Amount:"+dep);
+			System.out.println("Now Current Balance:"+Balance);
+		}
+		}
+	public void setAccholder(String Accholder) {
+		this.Accholder=Accholder;
+	}
+	public void setWithdraw(int withdraw) {
+		Balance -=withdraw;
+		System.out.println("withdraw amout:"+withdraw);
+	}
+
+}
+
+public class BankDetails {
+
+	public static void main(String[] args) {
+		SbiAcc ac=new SbiAcc("akalya",20000);
+		System.out.println("Account holder Name:"+ac.getAccholder());
+		ac.setAccholder("sandy");
+		System.out.println("update account holder:"+ac.getAccholder());
+		System.out.println("Balnace:"+ac.getBalance());
+		ac.Deposite(3000);
+		ac.setWithdraw(20000);
+		System.out.println("Avail Balnace:"+ac.getBalance());
+		
+
+	}
+
+}
