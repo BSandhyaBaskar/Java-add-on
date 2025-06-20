@@ -1,0 +1,14 @@
+package program;
+
+public class DemoMethod {
+
+	public static void  Details(String name,String work,String Package) {
+		System.out.println(name+" "+work+" "+Package);
+
+	}
+
+	public static void main(String[] args) {
+		Details("akalya","Trainer","3LPA");
+		Details("Sandy","Trainer","3PLA");
+	}
+}
